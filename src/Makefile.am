@@ -22,6 +22,7 @@ edit = $(SED)							\
 	-e 's|@pkgpythondir[@]|$(pkgpythondir)|g'		\
 	-e 's|@libdir[@]|$(libdir)|g'				\
 	-e 's|@prefix[@]|$(prefix)|g'				\
+	-e 's|@runstatedir[@]|$(runstatedir)|g'			\
 	-e 's|@localstatedir[@]|$(localstatedir)|g'
 
 confgen: confgen.in Makefile

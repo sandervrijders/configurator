@@ -235,7 +235,7 @@ def gen_ipcm_configs():
             "installationPath" : "@prefix@/bin",
             "libraryPath" : "@libdir@",
             "logPath" : "@localstatedir@/log",
-            "consolePort" : 32766,
+            "consoleSocket" : "@localstatedir@/run/ipcm-console.sock",
             "pluginsPaths" : ["@libdir@/rinad/ipcp"]
         }
 
@@ -321,6 +321,7 @@ def gen_ipcm_configs():
             dif_confs.append(dif_dic)
 
         complete_file = {
+            "configFileVersion" : "1.4.1",
             "localConfiguration" : local_conf,
             "applicationToDIFMappings" : app_to_dif,
             "ipcProcessesToCreate" : ipcps,

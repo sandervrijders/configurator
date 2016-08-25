@@ -49,13 +49,13 @@
 
   <node id="r2n1">
     <ipcp ap-name="shim-eth" ap-instance="1" dif="eth.shim5"/>
-    <ipcp ap-name="r2-n1" ap-instance="1" dif="cloud">
+    <ipcp ap-name="r2n1" ap-instance="1" dif="cloud">
       <register-dif name="eth.shim5"/>
     </ipcp>
   </node>
   <node id="r2n2">
     <ipcp ap-name="shim-eth" ap-instance="1" dif="eth.shim6"/>
-    <ipcp ap-name="r2-n2" ap-instance="1" dif="cloud">
+    <ipcp ap-name="r2n2" ap-instance="1" dif="cloud">
       <register-dif name="eth.shim6"/>
     </ipcp>
   </node>
